@@ -58,7 +58,7 @@ set(OPENMP_TEST_OPENMP_FLAGS ${OPENMP_TEST_COMPILER_OPENMP_FLAGS} CACHE STRING
 add_subdirectory(runtime)
 
 
-set(ENABLE_LIBOMPTARGET ON)
+set(ENABLE_LIBOMPTARGET OFF)
 # Currently libomptarget cannot be compiled on Windows or MacOS X.
 # Since the device plugins are only supported on Linux anyway,
 # there is no point in trying to compile libomptarget on other OSes.
